@@ -1,19 +1,23 @@
-.platform {
+.platform,
+.welcome {
     height: 100vh;
     display: flex;
 }
 
-.platform-img {
+.platform-img,
+.welcome-img {
     height: 100%;
     width: 666px;
     background: rgba(166, 167, 255, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
-.platform-desc {
-    margin-left: 100px;
+.platform-desc,
+.welcome-desc {
+    padding-left: 100px;
 }
 
 .auth-logo {
@@ -21,13 +25,15 @@
     margin-bottom: 70px;
 }
 
-.platform-desc h2 {
+.platform-desc h2,
+.welcome-desc h2 {
     font-weight: 500;
     font-size: 30px;
     line-height: 41px;
 }
 
-.platform-desc p {
+.platform-desc p,
+.welcome-desc p {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -35,7 +41,8 @@
     margin: 8px 0 24px 0;
 }
 
-.platform-desc-1, .platform-desc-2 {
+.platform-desc-1,
+.platform-desc-2 {
     width: 426px;
     height: 108px;
     background: #F5F9FF;
@@ -45,13 +52,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 24px;
 }
 
-.pentagon {
+.pentagon-img {
     position: relative;
 }
 
-.icon {
+.penta-icon {
     position: absolute;
     display: flex;
     align-items: center;
@@ -59,4 +67,148 @@
     bottom: 0;
     width: 100%;
     height: 100%;
+}
+
+.pentagon-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pentagon-text h3 {
+    width: 115px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.pentagon-text p {
+    width: 264px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #8692A6;
+    margin: 0;
+}
+
+.platform-icon {
+    color: #6162D2;
+}
+
+.platform-desc-2 {
+    margin-top: 24px;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+}
+
+.platform-desc-2 .platform-icon {
+    color: #FFFFFF;
+}
+
+.welcome-desc {
+    padding-top: 100px;
+    padding-right: 90px;
+    width: 100%;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7C8DB5;
+}
+
+.onboarding p {
+    width: 129px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(124, 141, 181, 0.6);
+    margin: 0;
+}
+
+.onboarding h5 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #7C8DB5;
+}
+
+.welcome-desc h2 {
+    margin-top: 60px;
+}
+
+.welcome-desc label {
+    width: 110px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #696F79;
+    margin-top: 60px;
+}
+
+.phone-number {
+    width: 426px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #5254CF;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.num-code {
+    padding: 20px 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #7C8DB5;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    ;
+}
+
+.phone-number input[type="number"] {
+    width: 100%;
+    background-color: inherit;
+    height: 100%;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #494949;
+    padding-left: 20px;
+}
+
+.welcome-desc button {
+    width: 426px;
+    height: 64px;
+    background: #5254CF;
+    border-radius: 6px;
+    margin-top: 60px;
+}
+
+.welcome-desc .secure {
+    display: flex;
+    width: 426px;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7C8DB5;
+    margin-top: 30px;
 }
