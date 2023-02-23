@@ -5,8 +5,8 @@ import lock from '../../assets/lock_24px.svg'
 const WelcomeBack = () => {
     return (
         <div className="welcome">
-            <div className="welcome-img">
-                <img src={img} alt="authImg" />
+            <div className="left-img">
+                <img src={img} alt="leftImg" />
             </div>
 
             <div className="welcome-desc">

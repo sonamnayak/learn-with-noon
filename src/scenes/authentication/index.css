@@ -1,21 +1,18 @@
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-input[type=number] {
-  -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .platform,
 .welcome,
-.verification {
+.verification,
+.avatar {
     height: 100vh;
     display: flex;
 }
 
-.platform-img,
-.welcome-img {
+.left-img {
     height: 100%;
     width: 666px;
     background: rgba(166, 167, 255, 0.9);
@@ -49,6 +46,7 @@ input[type=number] {
     line-height: 28px;
     color: #8692A6;
     margin: 8px 0 24px 0;
+    width: 411px;
 }
 
 .platform-desc-1,
@@ -116,14 +114,13 @@ input[type=number] {
 }
 
 .welcome-desc {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-right: 90px;
     width: 100%;
 }
 
 .box1 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -139,7 +136,6 @@ input[type=number] {
 }
 
 .onboarding p {
-    width: 129px;
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
@@ -227,4 +223,14 @@ input[type=number] {
     line-height: 16px;
     color: #7C8DB5;
     margin-top: 30px;
+}
+
+.avatar-grid {
+    width: 402px;
+    height: 241px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 46px;
+    align-items: center;
+    place-items: center;
 }

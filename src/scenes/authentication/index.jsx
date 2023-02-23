@@ -1,8 +1,9 @@
 import React from 'react'
-import Platform from './Platform'
 import './index.css'
+import Platform from './Platform'
 import WelcomeBack from './WelcomeBack'
 import VerificationCode from './VerificationCode'
+import Avatar from './Avatar'
 
 const index = () => {
   return (
@@ -10,6 +11,7 @@ const index = () => {
         <Platform />
         <WelcomeBack />
         <VerificationCode />
+        <Avatar />
     </div>
   )
 }

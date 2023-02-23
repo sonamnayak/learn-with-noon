@@ -3,10 +3,10 @@ import img from '../../assets/Frame 626200.svg'
 import lock from '../../assets/lock_24px.svg'
 
 const VerificationCode = () => {
-  return (
-    <div className="verification">
-        <div className="welcome-img">
-                <img src={img} alt="authImg" />
+    return (
+        <div className="verification">
+            <div className="left-img">
+                <img src={img} alt="leftImg" />
             </div>
 
             <div className="welcome-desc">
@@ -26,8 +26,8 @@ const VerificationCode = () => {
                 <button>Verify</button>
                 <div className="secure"><img src={lock} alt="lock" />Your Info is safely secured</div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default VerificationCode
