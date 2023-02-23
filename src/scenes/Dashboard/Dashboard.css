@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     box-sizing: border-box;
     padding: 20px 40px;
@@ -7,28 +7,60 @@ nav{
     align-items: center;
 }
 
-.p-feild{
-    display: flex;    
+.p-feild {
+    display: flex;
 }
-.planner-feild{
-    margin:  auto 20px;
+
+.planner-feild {
+    margin: auto 20px;
     height: 100%;
 }
 
-.search >input{
+.search>input {
     background-color: #dddd;
     width: 35vw;
     padding: 5px;
     border-radius: 5px;
 }
 
-.nav-end{
+.nav-end {
     display: flex;
 }
-#profile{
-        display: flex;    
+
+#profile {
+    display: flex;
 }
 
-.discover{
+.discover {
     background-color: #fafafa;
+}
+
+.planner, .group {
+    display: flex;
+    justify-content: center;
+    margin: 40px 100px 0px 100px;
+    gap: 30px;
+}
+
+.profile {
+    flex: 0.3;
+}
+
+.planner-cards, .group-cards {
+    flex: 0.7;
+    background-color: #ffffff;
+    border: 1px solid #e4ecf8;
+    border-radius: 12px;
+    padding: 0px 16px;
+}
+
+.group-head {
+    display: flex;
+    align-items: center;
+}
+
+.planner-cards h3, .group-cards h3 {
+    padding: 24px 10px;
+    font-size: 18px;
+    font-weight: 600;
 }

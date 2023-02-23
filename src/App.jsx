@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path='/dashboard/mygroups/plan' element={<><NoonPlan /></>} />
         <Route path='/dashboard/discover' element={<><Header /><Discover /></>} />
         <Route path='/dashboard/planner' element={<><Header /><Discover /></>} />
@@ -40,7 +40,8 @@ function App() {
 
         <Route path='/terms' element={<><Terms_conditions /></>} />
         <Route path='/' element={<><Landing /></>} />
-      </Routes>
+      </Routes> */}
+      <Dashboard />
 
 
     </div>

@@ -8,7 +8,7 @@ function Profile() {
             <img src="" alt="Profile" />
         </section>
         <div>
-            <strong>Name of stud</strong>
+            <strong>Name of student </strong>
             <span>Year</span>
         </div>
     </div>
