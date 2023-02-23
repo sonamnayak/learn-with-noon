@@ -12,14 +12,14 @@ import Section6 from "./Section6"
 const index = () => {
   return (
     <div>
-        <Navbar />
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-        <Section5 />
-        <Section6 />
-        <Footer />
+      <Navbar />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Footer />
     </div>
   )
 }

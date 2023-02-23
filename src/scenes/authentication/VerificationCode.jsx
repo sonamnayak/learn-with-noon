@@ -40,8 +40,8 @@ const navigate = useNavigate();
 
   return (
     <div className="verification">
-        <div className="welcome-img">
-                <img src={img} alt="authImg" />
+        <div className="left-img">
+                <img src={img} alt="leftImg" />
             </div>
 
             <div className="welcome-desc">
