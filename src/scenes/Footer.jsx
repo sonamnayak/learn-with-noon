@@ -14,9 +14,9 @@ const Footer = () => {
             <button>👀Career</button>
         </div>
         <div className="footer-social">
-            <div><i class="fa-brands fa-facebook-f"></i></div>
-            <div><i class="fa-brands fa-linkedin-in"></i></div>
-            <div><i class="fa-brands fa-twitter"></i></div>
+            <div><i className="fa-brands fa-facebook-f"></i></div>
+            <div><i className="fa-brands fa-linkedin-in"></i></div>
+            <div><i className="fa-brands fa-twitter"></i></div>
         </div>
         <div className="hr"></div>
         <div className="copyright">© 2019 Lift Media. All Rights Reserved.</div>

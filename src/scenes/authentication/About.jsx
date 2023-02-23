@@ -10,7 +10,7 @@ const About = () => {
 
             <div className="welcome-desc">
                 <div className="box1">
-                    <div className="back"><i class="fa-solid fa-angle-left"></i>Back</div>
+                    <div className="back"><i className="fa-solid fa-angle-left"></i>Back</div>
                     <div className="onboarding">
                         <p>Let's know you better</p>
                         <h5>About</h5>

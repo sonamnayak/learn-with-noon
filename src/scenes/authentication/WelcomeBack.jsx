@@ -4,6 +4,7 @@ import lock from '../../assets/lock_24px.svg'
 import { signInWithPhoneNumber, RecaptchaVerifier } from "firebase/auth";
 import { authentication } from '../../Firebase/Firebase';
 import VerificationCode from './VerificationCode';
+import { useNavigate } from 'react-router-dom'
 
 
 const WelcomeBack = () => {
@@ -11,7 +12,7 @@ const WelcomeBack = () => {
   const [phone_number, setPhone_number] = useState("")
   const [otpsent, setotpsent] = useState(false)
 
-
+  const navigate = useNavigate();
 
   const requestOTP = async (e) => {
 
@@ -56,7 +57,7 @@ const WelcomeBack = () => {
 
           <div className="welcome-desc">
             <div className="box1">
-              <div className="back"><i class="fa-solid fa-angle-left"></i>Back</div>
+              <div className="back" onClick={() => navigate("/")}><i className="fa-solid fa-angle-left"></i>Back</div>
               <div className="onboarding">
                 <p>Yaaaaaaa! welcome</p>
                 <h5>Onboarding</h5>

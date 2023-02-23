@@ -12,7 +12,7 @@ const Section1 = () => {
             <p>Our mission is to radically change the way people learn. We empower students to learn from top teachers in groups with their friends</p>
             <button>
                <Link to="/login">Start Learning</Link> 
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
             </button>
         </div>
         <div className="section-1-box-2"></div>

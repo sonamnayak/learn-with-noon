@@ -46,7 +46,7 @@ const navigate = useNavigate();
 
             <div className="welcome-desc">
                 <div className="box1">
-                    <div className="back"><i class="fa-solid fa-angle-left"></i>Back</div>
+                    <div className="back" onClick={() => navigate("/login/student")}><i className="fa-solid fa-angle-left"></i>Back</div>
                     <div className="onboarding">
                         <p>Almost there!</p>
                         <h5>Onboarding</h5>

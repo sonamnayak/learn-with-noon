@@ -35,7 +35,7 @@ const Platform = () => {
           </div>
 
           <div className="platform-icon">
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </div>
         </div>
         <Link to={"/login/student"} >
@@ -53,7 +53,7 @@ const Platform = () => {
             </div>
 
           <div className="platform-icon">
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </div>
         </div>
         </Link>
