@@ -1,12 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img from '../../assets/Frame 626199welcome.svg'
 import lock from '../../assets/lock_24px.svg'
+import { signInWithPhoneNumber, RecaptchaVerifier } from "firebase/auth";
+import { authentication } from '../../Firebase/Firebase';
+import VerificationCode from './VerificationCode';
+
 
 const WelcomeBack = () => {
+
+        const [phone_number, setPhone_number] = useState("")
+        const [otpsent, setotpsent] = useState(false)
+
+       
+
+    const requestOTP = async (e) => {
+    
+            const phoneNumber =`+91${phone_number}`
+            console.log(phoneNumber)
+          generateRecaptcha();
+          const appVerifier = window.recaptchaVerifier;
+
+    
+          signInWithPhoneNumber(authentication, phoneNumber, appVerifier)
+            .then(confirmationResult => {
+              window.confirmationResult = confirmationResult;
+              setotpsent(true)
+            }).catch((error) => {
+              console.log(error)
+            })
+    
+    
+      }
+      const generateRecaptcha = () => {
+        window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
+          'size': 'invisible',
+          'callback': (response) => {
+            // reCAPTCHA solved, allow signInWithPhoneNumber.
+            //   onSignInSubmit();
+          }
+        }, authentication);
+    
+      }
+
+      const otp =()=>{
+        console.log(phone_number)
+      }
+
     return (
-        <div className="welcome">
-            <div className="left-img">
-                <img src={img} alt="leftImg" />
+        <>
+        {otpsent === false ? <>
+            <div className="welcome">
+            <div className="welcome-img">
+                <img src={img} alt="authImg" />
             </div>
 
             <div className="welcome-desc">
@@ -22,12 +67,23 @@ const WelcomeBack = () => {
                 <label htmlFor="phone">Phone number</label> <br />
                 <div className="phone-number">
                     <div className="num-code">+91</div>
-                    <input type="number" name="" id="phone" placeholder="Enter Phone Number" />
+                    <input type="number" name="" id="phone" placeholder="Enter Phone Number" value={phone_number} onChange={(e)=>{setPhone_number(e.target.value)}} />
                 </div>
-                <button>Send OTP for verification</button>
+                <button onClick={()=>{requestOTP()}}>Send OTP for verification</button>
                 <div className="secure"><img src={lock} alt="lock" />Your Info is safely secured</div>
             </div>
+      <div id="recaptcha-container"></div>
+
         </div>
+        </> : 
+        <>
+        <VerificationCode/>
+        </>
+        }
+        
+        
+        </>
+       
     )
 }
 
