@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -6,9 +7,9 @@ const Footer = () => {
         <h1>Seasoned. Nimble. Remote.</h1>
         <p>We're a diverse and passionate team that takes ownership of your learning and empower you to execute the roadmap. We stay light on our feet and truly enjoy delivering what you need.</p>
         <div className="footer-buttons">
-            <button>📜Terms and condition</button>
-            <button>💰Refund Policy</button>
-            <button>🔏Privacy Policy</button>
+            <button><Link to={"/terms"}>📜Terms and condition </Link></button>
+            <button><Link to={"/refund"}>💰Refund Policy</Link></button>
+            <button><Link to={"/privacy"} >🔏Privacy Policy</Link></button>
             <button>👋Support</button>
             <button>👀Career</button>
         </div>

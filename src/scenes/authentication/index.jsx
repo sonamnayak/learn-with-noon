@@ -8,8 +8,8 @@ const index = () => {
   return (
     <div>
         <Platform />
-        <WelcomeBack />
-        <VerificationCode />
+        {/* <WelcomeBack /> */}
+        {/* <VerificationCode /> */}
     </div>
   )
 }

@@ -1,0 +1,34 @@
+nav{
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.p-feild{
+    display: flex;    
+}
+.planner-feild{
+    margin:  auto 20px;
+    height: 100%;
+}
+
+.search >input{
+    background-color: #dddd;
+    width: 35vw;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-end{
+    display: flex;
+}
+#profile{
+        display: flex;    
+}
+
+.discover{
+    background-color: #fafafa;
+}
