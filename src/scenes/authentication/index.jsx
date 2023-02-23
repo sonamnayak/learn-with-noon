@@ -4,6 +4,7 @@ import Platform from './Platform'
 import WelcomeBack from './WelcomeBack'
 import VerificationCode from './VerificationCode'
 import Avatar from './Avatar'
+import About from './About'
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
         <WelcomeBack />
         <VerificationCode />
         <Avatar />
+        <About />
     </div>
   )
 }
