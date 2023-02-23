@@ -61,8 +61,8 @@ const navigate = useNavigate();
                 <button onClick={verifyOTP} >Verify</button>
                 <div className="secure"><img src={lock} alt="lock" />Your Info is safely secured</div>
             </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default VerificationCode

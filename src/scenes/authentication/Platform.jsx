@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom'
 const Platform = () => {
   return (
     <div className="platform">
-      <div className="platform-img">
-        <img src={img} alt="authImg" />
+      <div className="left-img">
+        <img src={img} alt="leftImg" />
       </div>
 
       <div className="platform-desc">
