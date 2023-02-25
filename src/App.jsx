@@ -41,7 +41,6 @@ function App() {
         <Route path='/terms' element={<><Terms_conditions /></>} />
         <Route path='/' element={<><Landing /></>} />
       </Routes>
-
     </div>
   )
 }

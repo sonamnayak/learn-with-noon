@@ -81,38 +81,386 @@
     height: 30vh;
     background-color: #83e0be;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10%;
-    box-sizing: border-box;
+    padding-left: 5%;
+    gap: 50px;
 
 }
 
-.noon-plan>header>h1 {
+.head>.teacher-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-icon {
+    color: #1c1e21;
+    padding-top: 6vh;
+    font-size: 22px;
+}
+
+.noon-plan>header>.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.teacher-detail>.subject-badge {
+    display: flex;
+    gap: 5px;
+    border: 1px solid black;
+    padding: 2px 6px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.teacher-detail>.year {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.noon-plan>header>.head>h1 {
     font-size: 33px;
     font-weight: bold;
 }
 
-.noon-plan>header>strong {
-    font-size: 22px;
+.noon-plan>header>.head>strong {
+    font-size: 18px;
+    font-weight: 600;
 
 }
 
 .plan-main {
-    box-sizing: border-box;
-    padding: 5% 10%;
     display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 2% 10%;
+}
+
+.main {
+    flex: 0.5;
+    width: 70%;
+}
+
+.noon-teacher {
+    background-color: #ffffff;
+    border: 1px solid #dddd;
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+}
+
+.noon-teacher>h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.noon-teacher .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.noon-teacher .desc {
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 18px;
+}
+
+.noon-teacher .profile-card .name {
+    font-size: 16px;
+    color: #23294e;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+
+.noon-teacher .profile-card .students {
+    color: #586774;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.profile .desc {
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.noon-teacher .testimonial {
+    color: #62687a;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.feedback {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-x: scroll;
+}
+
+.feedback-card {
+    padding: 1.6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 200px;
+    height: max-content;
+    border-radius: 12px;
+    border: 1px solid #e4ecf8;
+    font-size: 14px;
+}
+
+.feedback-card .feedback-text {
+    color: #333;
+    line-height: 18px;
+}
+
+.feedback-card .student-name {
+    font-weight: 600;
+}
+
+
+.duration p {
+    color: #62687a;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.duration div {
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.session {
+    margin-top: 20px !important;
+}
+
+.timing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.timing-card {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    padding: 8px 8px;
+    background: #f2f2f2;
+    border: 0;
+    cursor: unset;
+    border-radius: 50px;
+}
+
+.timing-card div {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.timing-card .time {
+    color: #586774;
+    font-weight: 400;
+}
+
+.curriculum-head {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
+.curriculum-head>h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
 
-.pay {
-    width: 350px;
-    height: 500px;
+.curriculum-head>div {
+    color: #586774;
+    font-size: 14px;
+}
+
+.curriculum-progress {
+    border: 1px solid #e4ecf8;
+    border-radius: 12px;
+    padding: 5%;
+}
+
+.curriculum-card {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    color: #ccc;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    background-color: #ccc;
+    width: 6px;
+    height: 100%;
+    margin-top: -2px;
+}
+
+.ongoing-icon {
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #1a8dff;
+    width: 20px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ongoing-prog-line {
+    width: 0;
+}
+
+.chapter {
+    padding-bottom: 20px;
+}
+
+.chapter .head {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1c1e21;
+    line-height: 18px;
+}
+
+.chapter .name {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    line-height: 14px;
+}
+
+.chapter-status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chapter-status .status span {
+    background-color: hsla(0, 0%, 80%, .10196);
+    color: #afafaf;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 2px 6px;
+    border-radius: 12px;
+}
+
+.ongoing {
+    color: #1a8dff !important;
+}
+
+.subtopics {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtopics div{
+    font-size: 12px;
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.curriculum-button {
+    background-color: #1a8dff;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 30px 0 10px 0;
+    width: 100%;
+}
+
+.curriculum-tax {
+    color: #586774;
+    font-weight: 500;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.curriculum-tax>span {
+    font-weight: 400;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    flex: 0.5;
+    height: max-content;
     border: 1px solid #dddd;
     border-radius: 10px;
     background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.sidebar>h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.sidebar>div>p {
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.sidebar>button {
+    background-color: #1a8dff;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.sidebar>p {
+    color: #586774;
+    font-weight: 500;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.sidebar>p>span {
+    font-weight: 400;
+}
+
+
+
+/* planner & group card  */
 
 .planner-card {
     display: flex;
@@ -170,7 +518,8 @@
     align-items: center;
 }
 
-.planner-center button, .group-card button {
+.planner-center button,
+.group-card button {
     font-size: 1rem;
     background: rgb(100, 216, 174);
     color: white;
@@ -188,13 +537,14 @@
     color: #586774;
 }
 
-.planner-center h4, .group-center h4 {
+.planner-center h4,
+.group-center h4 {
     color: #2e2a2a;
     font-size: 16px;
     font-weight: 600;
 }
 
-.planner-right{
+.planner-right {
     color: #1a8dff;
     font-size: 15px;
     font-weight: 400;
@@ -248,7 +598,7 @@
     gap: 10px;
 }
 
-.group-center-div-1 p{
+.group-center-div-1 p {
     color: #222c3c;
     font-weight: 600;
 }
