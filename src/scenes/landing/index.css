@@ -103,7 +103,7 @@ body {
 
 .man {
   width: auto;
-  height: 650px;
+  max-height: 650px;
   z-index: 200;
   position: absolute;
   right: 77px;
